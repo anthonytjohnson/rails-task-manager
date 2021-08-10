@@ -1,6 +1,8 @@
 <h2><%= @task.title %></h2>
 <p><%= @task.details %></p>
-<p>Completed? <%= @task.completed %></p>
+<p>Completed? <% @task.completed %></p>
+<i class="far fa-check-square"></i>
+<i class="far fa-square"></i>
 
 <%= link_to 'Edit Task', edit_task_path %>
 <%= link_to 'Delete Task', task_path(@task), method: :delete, data: {confirm: "Do you really want to delete this task?"} %>
